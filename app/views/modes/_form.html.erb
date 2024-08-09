@@ -1,3 +1,13 @@
+<div class="messages">
+  <% if(mode.errors.any?) %>
+    <p><%= t('verify_the_following_errors') %>:</p>
+    <ul>
+      <% mode.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
 <%= form_with(model: mode) do |f| %>
   <div class="">
     <%= f.label :name, class: "form-label" %>
