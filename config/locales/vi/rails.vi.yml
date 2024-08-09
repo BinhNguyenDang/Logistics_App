@@ -1,0 +1,222 @@
+vi:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Xác thực không thành công: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Không thể xóa bản ghi vì có một bản ghi %{record} phụ thuộc
+          has_many: Không thể xóa bản ghi vì có %{record} bản ghi phụ thuộc
+  date:
+    abbr_day_names:
+    - cn
+    - tn
+    - ba
+    - tư
+    - năm
+    - sáu
+    - bảy
+    abbr_month_names:
+    - 
+    - th1
+    - th2
+    - th3
+    - th4
+    - th5
+    - th6
+    - th7
+    - th8
+    - th9
+    - th10
+    - th11
+    - th12
+    day_names:
+    - Chủ Nhật
+    - Thứ Hai
+    - Thứ Ba
+    - Thứ Tư
+    - Thứ Năm
+    - Thứ Sáu
+    - Thứ Bảy
+    formats:
+      default: "%d/%m/%Y"
+      long: "%d tháng %B năm %Y"
+      short: "%d tháng %B"
+    month_names:
+    - 
+    - tháng 1
+    - tháng 2
+    - tháng 3
+    - tháng 4
+    - tháng 5
+    - tháng 6
+    - tháng 7
+    - tháng 8
+    - tháng 9
+    - tháng 10
+    - tháng 11
+    - tháng 12
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: khoảng %{count} giờ
+        other: khoảng %{count} giờ
+      about_x_months:
+        one: khoảng %{count} tháng
+        other: khoảng %{count} tháng
+      about_x_years:
+        one: khoảng %{count} năm
+        other: khoảng %{count} năm
+      almost_x_years:
+        one: gần %{count} năm
+        other: gần %{count} năm
+      half_a_minute: nửa phút
+      less_than_x_seconds:
+        one: ít hơn %{count} giây
+        other: ít hơn %{count} giây
+      less_than_x_minutes:
+        one: ít hơn một phút
+        other: ít hơn %{count} phút
+      over_x_years:
+        one: hơn %{count} năm
+        other: hơn %{count} năm
+      x_seconds:
+        one: "%{count} giây"
+        other: "%{count} giây"
+      x_minutes:
+        one: "%{count} phút"
+        other: "%{count} phút"
+      x_days:
+        one: "%{count} ngày"
+        other: "%{count} ngày"
+      x_months:
+        one: "%{count} tháng"
+        other: "%{count} tháng"
+      x_years:
+        one: "%{count} năm"
+        other: "%{count} năm"
+    prompts:
+      second: Giây
+      minute: Phút
+      hour: Giờ
+      day: Ngày
+      month: Tháng
+      year: Năm
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: phải được chấp nhận
+      blank: không thể để trống
+      confirmation: không khớp với %{attribute}
+      empty: không thể để trống
+      equal_to: phải bằng %{count}
+      even: phải là số chẵn
+      exclusion: không có sẵn
+      greater_than: phải lớn hơn %{count}
+      greater_than_or_equal_to: phải lớn hơn hoặc bằng %{count}
+      inclusion: không có trong danh sách
+      invalid: không hợp lệ
+      less_than: phải nhỏ hơn %{count}
+      less_than_or_equal_to: phải nhỏ hơn hoặc bằng %{count}
+      model_invalid: 'Xác thực không thành công: %{errors}'
+      not_a_number: không phải là số
+      not_an_integer: không phải là số nguyên
+      odd: phải là số lẻ
+      other_than: phải khác %{count}
+      present: phải để trống
+      required: là bắt buộc
+      taken: đã được sử dụng
+      too_long:
+        one: 'quá dài (tối đa: %{count} ký tự)'
+        other: 'quá dài (tối đa: %{count} ký tự)'
+      too_short:
+        one: 'quá ngắn (tối thiểu: %{count} ký tự)'
+        other: 'quá ngắn (tối thiểu: %{count} ký tự)'
+      wrong_length:
+        one: không đúng kích thước (%{count} ký tự)
+        other: không đúng kích thước (%{count} ký tự)
+    template:
+      body: 'Vui lòng kiểm tra các trường sau:'
+      header:
+        one: 'Không thể lưu %{model}: %{count} lỗi'
+        other: 'Không thể lưu %{model}: %{count} lỗi'
+  helpers:
+    select:
+      prompt: Vui lòng chọn
+    submit:
+      create: Tạo %{model}
+      submit: Lưu %{model}
+      update: Cập nhật %{model}
+  number:
+    currency:
+      format:
+        delimiter: "."
+        format: "%u %n"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: đ
+    format:
+      delimiter: "."
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            one: tỷ
+            other: tỷ
+          million:
+            one: triệu
+            other: triệu
+          quadrillion:
+            one: ngàn tỷ
+            other: ngàn tỷ
+          thousand: nghìn
+          trillion:
+            one: triệu tỷ
+            other: triệu tỷ
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          eb: EB
+          gb: GB
+          kb: KB
+          mb: MB
+          pb: PB
+          tb: TB
+    percentage:
+      format:
+        delimiter: "."
+        format: "%n%"
+    precision:
+      format:
+        delimiter: "."
+  support:
+    array:
+      last_word_connector: " và "
+      two_words_connector: " và "
+      words_connector: ", "
+  time:
+    am: ''
+    formats:
+      default: "%a, %d tháng %B năm %Y, %H:%M:%S %z"
+      long: "%d tháng %B năm %Y, %H:%M"
+      short: "%d tháng %B, %H:%M"
+    pm: ''

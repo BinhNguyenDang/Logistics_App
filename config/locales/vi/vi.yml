@@ -1,0 +1,7 @@
+vi:
+  error_on_creating_mode: Lỗi khi tạo phương thức
+  logistics: Nhà Vận Chuyển
+  modes: Các Phương Thức
+  mode_created_sucessfully: Phương thức đã được tạo thành công
+  new_mode: Phương Thức Mới
+  save: Lưu

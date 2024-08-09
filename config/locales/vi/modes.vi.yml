@@ -1,0 +1,17 @@
+vi:
+  activerecord:
+    models:
+      mode:
+        one: Phương Thức
+        other: Các Phương Thức
+    attributes:
+      mode:
+        modes: Các Phương Thức
+        new_mode: Phương Thức Mới
+        name: Tên
+        min_distance: Khoảng Cách Tối Thiểu
+        max_distance: Khoảng Cách Tối Đa
+        min_weight: Trọng Lượng Tối Thiểu
+        max_weight: Trọng Lượng Tối Đa
+        fixed_fee: Phí Cố Định
+        active: Kích Hoạt
