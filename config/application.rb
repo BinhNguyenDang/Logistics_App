@@ -14,7 +14,7 @@ module LogisticsApp
     I18n.load_path += Dir[Rails.root.join('lib', 'locale', '*.{rb,yml}')]
     # Permitted locales available for the application
     I18n.available_locales = %i[en vi]
-    config.i18n.default_locale = :vi
+    config.i18n.default_locale = :en
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
     # Common ones are `templates`, `generators`, or `middleware`, for example.

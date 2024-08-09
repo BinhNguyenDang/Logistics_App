@@ -23,8 +23,8 @@ class ModesController < ApplicationController
 
   private
 
-  def node_params
-    params.require(:node).permit(:name, :min_distance, :max_distance, :min_weight, :max_weight, :fixed_fee, :active)
+  def mode_params
+    params.require(:mode).permit(:name, :min_distance, :max_distance, :min_weight, :max_weight, :fixed_fee, :active)
   end
 
   def mode_find

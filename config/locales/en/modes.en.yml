@@ -1,0 +1,17 @@
+en:
+  activerecord:
+    models:
+      mode:
+        one: Mode
+        other: Modes
+    attributes:
+      mode:
+        active: Active
+        fixed_fee: Fixed Fee
+        modes: Modes
+        max_distance: Maximum Distance
+        max_weight: Maximum Weight
+        min_distance: Minimum Distance
+        min_weight: Minimum Weight
+        name: Name
+        new_mode: New Mode
