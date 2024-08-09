@@ -1,14 +1,18 @@
 en:
   $: $
+  active: Active
   back: Back
   distance: Distance
   error_on_creating_mode: Error creating mode
+  fixed_fee: Fixed fee
   from: from
-  logistics: Logistics
+  logistics: Carriers
+  mode: Mode
   modes: Modes
   mode_created_successfully: Mode created successfully
+  name: Name
   new_mode: New Mode
+  no_modes_registered: No modes registered
   save: Save
   to: to
   verify_the_following_errors: Please check the following errors
-  weight: Weight
