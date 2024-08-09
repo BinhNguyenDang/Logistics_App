@@ -7,3 +7,14 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+5.times do |i|
+  Mode.create!(
+    name: "Mode #{i + 1}",
+    min_distance: 10 * (i + 1),
+    max_distance: 100 * (i + 1),
+    min_weight: 1 * (i + 1),
+    max_weight: 100 * (i + 1),
+    fixed_fee: 50,
+    active: true
+  )
+end
