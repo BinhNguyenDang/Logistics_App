@@ -1,5 +1,5 @@
 class ModesController < ApplicationController
-  before_action :mode_find, only: [:show]
+  # before_action :mode_find, only: [:show]
   def index
     @modes = Mode.all
   end
