@@ -1,7 +1,14 @@
 vi:
-  error_on_creating_mode: Lỗi khi tạo phương thức
-  logistics: Nhà Vận Chuyển
-  modes: Các Phương Thức
-  mode_created_sucessfully: Phương thức đã được tạo thành công
-  new_mode: Phương Thức Mới
+  $: ₫
+  back: Quay lại
+  distance: Khoảng cách
+  error_on_creating_mode: Lỗi khi tạo loại hình
+  from: từ
+  logistics: Nhà vận chuyển
+  modes: Các loại hình
+  mode_created_sucessfully: Loại hình đã được tạo thành công
+  new_mode: Loại hình mới
   save: Lưu
+  to: đến
+  verify_the_following_errors: Vui lòng kiểm tra các lỗi sau
+  weight: Trọng lượng

@@ -2,16 +2,17 @@ vi:
   activerecord:
     models:
       mode:
-        one: Phương Thức
-        other: Các Phương Thức
+        one: Loại hình
+        other: Các loại hình
     attributes:
       mode:
-        modes: Các Phương Thức
-        new_mode: Phương Thức Mới
+        active: Hoạt động
+        fixed_fee: Phí cố định
+        modes: Các loại hình
+        max_distance: Khoảng cách tối đa
+        max_weight: Trọng lượng tối đa
+        min_distance: Khoảng cách tối thiểu
+        min_weight: Trọng lượng tối thiểu
         name: Tên
-        min_distance: Khoảng Cách Tối Thiểu
-        max_distance: Khoảng Cách Tối Đa
-        min_weight: Trọng Lượng Tối Thiểu
-        max_weight: Trọng Lượng Tối Đa
-        fixed_fee: Phí Cố Định
-        active: Kích Hoạt
+        new_mode: Loại hình mới
+
