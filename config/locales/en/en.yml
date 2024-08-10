@@ -10,6 +10,10 @@ en:
   logistics: Carriers
   mode: Mode
   modes: Modes
+  max_distance: Maximum Distance
+  max_weight: Maximum Weight
+  min_distance: Minimum Distance
+  min_weight: Minimum Weight
   mode_created_successfully: Mode created successfully
   name: Name
   new_mode: New Mode

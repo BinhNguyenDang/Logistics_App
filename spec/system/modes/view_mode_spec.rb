@@ -28,16 +28,21 @@ describe "View modes" do
     expect(page).to have_current_path(modes_path)
     within('table thead') do 
       expect(page).to have_content "Name"
-      expect(page).to have_content "Distance (Km)"
+      expect(page).to have_content "Minimum Distance (Km)"
+      expect(page).to have_content "Maximum Distance (Km)"
       expect(page).to have_content "Status"
     end
     within('table tbody') do 
       expect(page).to have_content "Mode 1"
       expect(page).to have_content "Mode 2"
       expect(page).to have_content "Mode 3"
-      expect(page).to have_content "From 1 to 20"
-      expect(page).to have_content "From 2 to 40"
-      expect(page).to have_content "From 3 to 60"
+      expect(page).to have_content "1"
+      expect(page).to have_content "2"
+      expect(page).to have_content "3"
+      expect(page).to have_content "20"
+      expect(page).to have_content "40"
+      expect(page).to have_content "60"
+      
     end
   end
   it "no registered modes" do 
