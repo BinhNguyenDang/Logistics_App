@@ -2,6 +2,9 @@
     color: green;
   }
   
-  .inactive {
+.inactive {
     color: red;
-  }
+}
+table {
+    text-align: center;
+}
