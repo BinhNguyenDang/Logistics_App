@@ -28,7 +28,8 @@ describe "View modes" do
     expect(page).to have_current_path(modes_path)
     within('table thead') do 
       expect(page).to have_content "Name"
-      expect(page).to have_content "Distance"
+      expect(page).to have_content "Distance (Km)"
+      expect(page).to have_content "Status"
     end
     within('table tbody') do 
       expect(page).to have_content "Mode 1"

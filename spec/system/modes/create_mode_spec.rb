@@ -14,7 +14,7 @@ describe "Create Mode" do
     expect(page).to have_field 'Minimum Weight'
     expect(page).to have_field 'Maximum Weight'
     expect(page).to have_field 'Fixed Fee'
-    expect(page).to have_field 'Active'
+    expect(page).to have_field 'Status'
   end
 
   it "successfully" do
@@ -28,7 +28,7 @@ describe "Create Mode" do
     fill_in "Minimum Weight",	with: '1'
     fill_in "Maximum Weight",	with: '20'
     fill_in "Fixed Fee",	with: '5'
-    check "Active"
+    check "Status"
     click_on 'Save'
     # Assert
     expect(page).to have_content 'Mode created successfully'  
@@ -46,7 +46,7 @@ describe "Create Mode" do
     fill_in "Minimum Weight",	with: ''
     fill_in "Maximum Weight",	with: ''
     fill_in "Fixed Fee",	with: ''
-    check "Active"
+    check "Status"
     click_on 'Save'
     # Assert
     expect(page).to have_content 'Error creating mode'

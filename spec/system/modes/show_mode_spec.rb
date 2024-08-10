@@ -23,6 +23,7 @@ describe "Show modes" do
     expect(page).to have_content "Distance: from 1 to 20"
     expect(page).to have_content "Weight: from 1 to 20"
     expect(page).to have_content "$ 5"
+    expect(page).to have_content "Status: Active"
   end
   it "returns to modes page" do
     #Act 
@@ -31,6 +32,6 @@ describe "Show modes" do
     click_on "Mode Test"
     click_on "Back"
     #Assert
-    expect(current_path).to eq modes_path
+    expect(page).to have_current_path(modes_path)
   end
 end
