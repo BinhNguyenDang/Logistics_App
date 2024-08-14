@@ -2,13 +2,20 @@ en:
   $: $
   active: Active
   back: Back
+  brand: Brand
+  capacity: Capacity
+  category: Category
+  create_vehicle: Create Vehicle
   distance: Distance
   error_on_creating_mode: Error creating mode
   fixed_fee: Fixed fee
   from: from
+  in_maintenance: In Maintenance
+  in_operation: In operation
   inactive: Inactive
   logistics: Carriers
   mode: Mode
+  model: Model
   modes: Modes
   max_distance: Maximum Distance
   max_weight: Maximum Weight
@@ -17,7 +24,14 @@ en:
   mode_created_successfully: Mode created successfully
   name: Name
   new_mode: New Mode
+  new_vehicle: New Vehicle
   no_modes_registered: No modes registered
+  no_vehicles_registered: No vehicle registered
+  plate: Plate
   save: Save
   to: to
+  vehicle: Vehicle
+  vehicles: Vehicles
   verify_the_following_errors: Please check the following errors
+  weight: Weight
+  year: Year

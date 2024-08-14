@@ -1,0 +1,14 @@
+en:
+  activerecord:
+    models:
+      vehicle:
+        one: Vehicle
+        other: Vehicles
+    attributes:
+      vehicle:
+        brand: Brand
+        capacity: Capacity
+        category: Category
+        model: Model
+        plate: Plate
+        year: Year
