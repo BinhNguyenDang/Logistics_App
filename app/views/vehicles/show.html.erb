@@ -36,6 +36,12 @@
       </tr>
     </table>
   </div>
+  <div>
+    <span>
+      <%= button_to(t("edit"), edit_vehicle_path(@vehicle.id), method: :get, class: "btn btn-warning") %>
+      <%= button_to(t("delete"), vehicle_path(@vehicle.id), method: :delete, class: "btn btn-danger", data: { turbo_method: :delete, "turbo-confirm": "Are you sure you want to delete this vehicle?" }) %>
+    </span>
+  </div>
 </section>
 <section class="back">
   <%= link_to t("back"), vehicles_path, class: "btn btn-primary" %>

@@ -18,6 +18,7 @@ class VehiclesController < ApplicationController
 
   # GET /vehicles/1/edit
   def edit
+    @modes = Mode.all.order(:name)
   end
 
   # POST /vehicles or /vehicles.json
@@ -35,25 +36,23 @@ class VehiclesController < ApplicationController
 
   # PATCH/PUT /vehicles/1 or /vehicles/1.json
   def update
-    respond_to do |format|
-      if @vehicle.update(vehicle_params)
-        format.html { redirect_to vehicle_url(@vehicle), notice: "Vehicle was successfully updated." }
-        format.json { render :show, status: :ok, location: @vehicle }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @vehicle.errors, status: :unprocessable_entity }
-      end
+    if @vehicle.update(vehicle_params)
+      flash[:notice] = "Vehicle updated successfully"
+      return redirect_to @vehicle
     end
+    @modes = Mode.all.order(:name)
+    flash.now[:alert] = "Error while updating the vehicle"
+    render :edit, status: :unprocessable_entity
   end
 
   # DELETE /vehicles/1 or /vehicles/1.json
   def destroy
-    @vehicle.destroy!
-
-    respond_to do |format|
-      format.html { redirect_to vehicles_url, notice: "Vehicle was successfully destroyed." }
-      format.json { head :no_content }
+    if @vehicle.destroy
+      flash[:notice] = "Vehicle deleted successfully"
+      return redirect_to vehicles_path
     end
+    flash.now[:alert] = "Error while deleting the vehicle"
+    render :show, status: :unprocessable_entity
   end
 
   private

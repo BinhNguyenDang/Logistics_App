@@ -6,7 +6,9 @@ en:
   capacity: Capacity
   category: Category
   create_vehicle: Create Vehicle
+  delete: Delete
   distance: Distance
+  edit: Edit
   error_on_creating_mode: Error creating mode
   fixed_fee: Fixed fee
   from: from
