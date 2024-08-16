@@ -1,6 +1,7 @@
 en:
   $: $
   active: Active
+  actions: Actions
   back: Back
   brand: Brand
   capacity: Capacity
@@ -15,6 +16,7 @@ en:
   in_maintenance: In Maintenance
   in_operation: In operation
   inactive: Inactive
+  internal: Internal
   logistics: Carriers
   mode: Mode
   model: Model
@@ -26,11 +28,19 @@ en:
   mode_created_successfully: Mode created successfully
   name: Name
   new_mode: New Mode
+  new_price: New Price
   new_vehicle: New Vehicle
   no_modes_registered: No modes registered
+  no_prices_registered: No prices registered
   no_vehicles_registered: No vehicle registered
   plate: Plate
+  price: Price
+  prices: Prices
+  price_per_km: Price per Km
+  price_created_sucessfully: Price created succesfully
+  pricing_table: Pricing Table
   save: Save
+  this_modal_does_not_has_pricing_table: This modal does not has pricing table
   to: to
   vehicle: Vehicle
   vehicles: Vehicles

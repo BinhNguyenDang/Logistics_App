@@ -19,15 +19,31 @@
 #   )
 # end
 
+# for i in 1..3 do
+#   Vehicle.create!(
+#     plate: "ABC-123#{i}",
+#     brand: "Brand #{i}",
+#     model: "Model #{i}",
+#     category: "Category #{i}",
+#     year: "201#{i}",
+#     capacity: 100 * i,
+#     status: true,
+#     mode_id: 1
+#   )
+# end
+
 for i in 1..3 do
-  Vehicle.create!(
-    plate: "ABC-123#{i}",
-    brand: "Brand #{i}",
-    model: "Model #{i}",
-    category: "Category #{i}",
-    year: "201#{i}",
-    capacity: 100 * i,
-    status: true,
+  Price.create!(
+    min_weight: 5 * i,
+    max_weight: 10 * i,
+    price_per_km: 0.11 * i,
     mode_id: 1
   )
+  Price.create!(
+    min_weight: 7 * i,
+    max_weight: 12 * i,
+    price_per_km: 0.16 * i,
+    mode_id: 2
+  )
 end
+

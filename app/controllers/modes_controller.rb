@@ -5,7 +5,7 @@ class ModesController < ApplicationController
   end
 
   def show
-
+    @prices = Price.where(mode_id: @mode.id).order(:min_weight)
   end
 
   def new
