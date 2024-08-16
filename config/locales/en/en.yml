@@ -7,6 +7,8 @@ en:
   capacity: Capacity
   category: Category
   create_vehicle: Create Vehicle
+  deadline: Deadline
+  deadlines: Deadlines
   delete: Delete
   distance: Distance
   edit: Edit
@@ -27,9 +29,11 @@ en:
   min_weight: Minimum Weight
   mode_created_successfully: Mode created successfully
   name: Name
+  new_deadline: New Deadline
   new_mode: New Mode
   new_price: New Price
   new_vehicle: New Vehicle
+  no_deadlines_registered: No deadlines registered
   no_modes_registered: No modes registered
   no_prices_registered: No prices registered
   no_vehicles_registered: No vehicle registered

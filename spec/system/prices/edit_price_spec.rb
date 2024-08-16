@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-fdescribe "Edit price" do
+describe "Edit price" do
   before(:each) do
     # Arrange
     for i in 1..3 do

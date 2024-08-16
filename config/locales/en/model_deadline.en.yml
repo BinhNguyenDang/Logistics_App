@@ -1,0 +1,11 @@
+en:
+  activerecord:
+    models:
+      deadline:
+        one: Deadline
+        other: Deadlines
+    attributes:
+      deadline:
+        max_distance: Maximum Distance
+        min_distance: Minimum Distance
+        deadline: Deadline
