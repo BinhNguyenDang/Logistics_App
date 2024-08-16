@@ -19,11 +19,14 @@ describe "Show modes" do
     click_on "Modes"
     click_on "Mode Test"
     #Assert
-    expect(page).to have_content "Mode: Mode Test"
-    expect(page).to have_content "Distance: from 1 to 20"
-    expect(page).to have_content "Weight: from 1 to 20"
-    expect(page).to have_content "$ 5"
-    expect(page).to have_content "Status: Active"
+    expect(page).to have_content "Name Mode Test"
+    expect(page).to have_content "Minimum Distance 1 Km"
+    expect(page).to have_content "Maximum Distance 20 Km"
+    expect(page).to have_content "Minimum Weight 1 Kg"
+    expect(page).to have_content "Maximum Weight 20 Kg"
+    expect(page).to have_content "Fixed Fee $ 5"
+    expect(page).to have_content "Status Active"
+    
   end
   it "returns to modes page" do
     #Act 

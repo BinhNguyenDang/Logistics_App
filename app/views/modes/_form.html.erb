@@ -1,39 +1,41 @@
 <div class="messages">
   <!-- Existe alguma mensagem de erro de sistema? -->
   <% if(mode.errors.any?) %>
-    <p><%= t('verify_the_following_errors') %>:</p>
-    <ul>
-      <% mode.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
+     <div class="messages alert alert-warning alert-dismissible fade show" role="alert">
+     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <p><%= t('verify_the_following_errors') %>:</p>
+      <ul>
+        <% mode.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
   <% end %>
-</div>
 <div class="form">
   <%= form_with(model: mode) do |f| %>
-    <table class="vehicle__form table table-success table-striped">
+    <table class="modes__form table table-success table-striped">
       <tr>
         <th><%= f.label :name, class: "form-label" %></th>
         <td><%= f.text_field :name, class: "form-control" %></td>
       </tr>
       <tr>
-        <th><%= f.label :min_distance, class: "form-label" %></th>
+        <th><%= f.label :min_distance, t('min_distance') << ' (Km)', class: "form-label" %></th>
         <td><%= f.number_field :min_distance, class: "form-control" %></td>
       </tr>
       <tr>
-        <th><%= f.label :max_distance, class: "form-label" %></th>
+        <th><%= f.label :max_distance, t('max_distance') << ' (Km)', class: "form-label" %> </th>
         <td><%= f.number_field :max_distance, class: "form-control" %></td>
       </tr>
       <tr>
-        <th><%= f.label :min_weight, class: "form-label" %></th>
+        <th><%= f.label :min_weight, t('min_weight') << ' (Kg)', class: "form-label" %></th>
         <td><%= f.number_field :min_weight, class: "form-control" %></td>
       </tr>
       <tr>
-        <th><%= f.label :max_weight, class: "form-label" %></th>
+        <th><%= f.label :max_weight, t('max_weight') << ' (Kg)', class: "form-label" %></th>
         <td><%= f.number_field :max_weight, class: "form-control" %></td>
       </tr>
       <tr>
-        <th><%= f.label :fixed_fee, class: "form-label" %></th>
+        <th><%= f.label :fixed_fee, t('fixed_fee') << ' ($)', class: "form-label" %></th>
         <td><%= f.number_field :fixed_fee, class: "form-control" %></td>
       </tr>
       <tr>
@@ -43,7 +45,7 @@
         </td>
       </tr>
     </table>
-    <div class="">
+    <div class="modes__btn">
       <%= f.submit t('save'), class: "btn btn-success" %>
     </div>
   <% end %>
