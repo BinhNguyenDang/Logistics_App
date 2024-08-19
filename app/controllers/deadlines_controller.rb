@@ -1,5 +1,5 @@
 class DeadlinesController < ApplicationController
-  before_action :set_deadline, only: %i[edit update ]
+  before_action :set_deadline, only: %i[edit update destroy ]
   before_action :set_modes, only: %i[new create edit]
   # GET /deadlines or /deadlines.json
   def index
@@ -20,7 +20,7 @@ class DeadlinesController < ApplicationController
   def create
     @deadline = Deadline.new(deadline_params)
     if @deadline.save
-      flash[:notice] = 'Deadlines created successfully'
+      flash[:notice] = 'Deadline created successfully'
       return redirect_to deadlines_path
     end
     @modes = Mode.all.order(:name)
@@ -37,6 +37,15 @@ class DeadlinesController < ApplicationController
     @modes = Mode.all.order(:name)
     flash.now[:alert] = "Error updating deadline"
     render :edit, status: :unprocessable_entity
+  end
+
+  def destroy
+    if @deadline.destroy
+      flash[:notice] = "Deadline deleted successfully"
+      return redirect_to deadlines_path
+    end
+    flash.now[:alert] = "Error deleting deadline"
+    render :index, status: :unprocessable_entity    
   end
 
 

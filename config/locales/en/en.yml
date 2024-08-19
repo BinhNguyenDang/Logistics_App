@@ -45,6 +45,10 @@ en:
   pricing_table: Pricing Table
   save: Save
   this_modal_does_not_has_pricing_table: This modal does not has pricing table
+  this_modal_does_not_have_deadlines_table: "This mode does not yet have a deadline table."
+  this_modal_does_not_have_in_maintenance_vehicles: "This mode does not have vehicles under maintenance."
+  this_modal_does_not_have_in_operation_vehicles: "This mode does not have vehicles in operation."
+  this_modal_does_not_have_pricing_table: "This mode does not yet have a pricing table."
   to: to
   vehicle: Vehicle
   vehicles: Vehicles
